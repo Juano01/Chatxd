@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+      body {
+          background-image: url(../img/background.jpg);
+          background-image: no-repeat;
+          padding-top: 50px;
+      }
+
+      .card {
+          background-color: #fff;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 30px 20px;
+      }
+
+      .btn-register {
+          background-color: #ff6b6b;
+          border-color: #ff6b6b;
+          color: #fff;
+          font-weight: bold;
+      }
+
+      .btn-register:hover {
+          background-color: #ff4f4f;
+          border-color: #ff4f4f;
+      }
+  </style>
+
+
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+        <h2 class="text-center mb-4">Registro Bisne$</h2>
+        <form action="../clases/registro.php" method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="tipo_documento" name="tipo_documento" required>
+                <option value="">Tipo de documento</option>
+                <option value="Cedula de ciudadania">Cedula de ciudadania</option>
+                <option value="Cedula de extranjeria">Cedula de extranjeria</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+              <input type="number" class="form-control" id="documento" name="documento" required placeholder="Numero documento">
+              </div>
+            <div class="form-group">              
+          <input type="number" class="form-control" id="telefono" name="telefono" required placeholder="Telefono">
+            </div>
+            <div class="form-group">
+                <input type="Email" class="form-control" id="email" name="email" required placeholder="Email">
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="id_rol" name="id_rol" required>
+                <option value="">¿Que quieres?</option>
+                <option value="1">Comprar</option>
+                <option value="2">Vender</option>
+            </select>
+          </div>
+            <div class="form-group">
+            <input type="text" class="form-control" id="username" name="username" required placeholder="Nombre de usuario">
+            </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" name="password" required placeholder="Contraseña">
+              </div>
+                <div class="form-group">
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required placeholder="Confirmar contraseña">
+            </div>
+            <button type="submit" class="btn btn-register btn-block">Registrarse</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
